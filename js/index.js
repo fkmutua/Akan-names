@@ -3,7 +3,7 @@ var dayofWeekName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Fr
 var akanName;
 
 function getDayofWeek(dateofBirth) {
-
+  var dayofWeekName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   var dayofWeek;
   var dt = new Date(dateofBirth);
   var day = dt.getDay(); //Javascript inbuilt get day method that gives the day of the week
