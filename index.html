@@ -4,99 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan Names</title>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-</head>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/master.css">
+    </head>
 <body>
-    <h1 class="top">NAMING OF CHILDREN IN GHANA</h1>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#!"><h1 class="top">NAMING OF CHILDREN IN GHANA</h1></a>
+      </nav>
+      
+    
     <p>The Ghanaian culture cannot be considered a uniform one. Rather, it consists of hundreds of different ethnic influences and tribes who speak their own dialects and their own languages, having different cultural backgrounds. However, the different Ghanaian ethnic groups largely share one common belief: the naming of their children.</p>
     <p>Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.</p>
 
-    <img class="ghana children.jpg" src="ghana children.jpg" alt="This is an image of one of the young children in Ghana">
-    <h2>ENTER YOUR DATE OF BIRTH</h2>
-    <div class="form-group">
-        <label for="born">Date of birth:</label>
-        <input id="born" class="form-control" type="date">
+    
+    <div class="jumbotron">
+        <img class="ghana children.jpg" src="ghana children.jpg" alt="This is an image of one of the young children in Ghana">  
       </div>
-    <h3>SELECT YOUR GENDER:</h3>
-    <select class="form-control" id="Gender">
-        <option>Female</option>
-        <option>Male</option>
-      </select>
-      <h4></h4>
-    <button onclick="myFunction()">SUBMIT</button>
-      <script>
-        function myFunction() {
-            var dayofWeekName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-//Variable for the days of the week starting from Sunday indexed at [0]
-var akanName;
+      
+    
+      <button type="submit" onclick="getName();"><strong><em>LET'S HAVE FUN WITH AKAN NAMES IN A CLICK</em></strong>
+      <script type="text/javascript" src="js/index.js"></script>
 
-function getDayofWeek(dateofBirth) {
-
-  var dayofWeek;
-  var dt = new Date(dateofBirth);
-  var day = dt.getDay(); //Javascript inbuilt get day method that gives the day of the week
-  if (day == 0) {
-    dayofWeek = dayofWeekName[0];
-  } else if (day == 1) {
-    dayofWeek = dayofWeekName[1];
-  } else if (day == 2) {
-    dayofWeek = dayofWeekName[2];
-  } else if (day == 3) {
-    dayofWeek = dayofWeekName[3];
-  } else if (day == 4) {
-    dayofWeek = dayofWeekName[4];
-  } else if (day == 5) {
-    dayofWeek = dayofWeekName[5];
-  } else if (day == 6) {
-    dayofWeek = dayofWeekName[6];
-  }
-
-  return dayofWeek; // returns the day of the week
-}
-
-function getName() {
-  var genderFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama']; //Ghanian day names for the fenale gender
-  var genderMale = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame']; //Ghanian day names for male gender
-  var dateofBirth = prompt("Enter your date of birth in the format: Month / Date / Year")
-  var gender = prompt("Enter your gender, male or female")
-  var dayOftheWeek = getDayofWeek(dateofBirth);
-  if (gender == "male" && dayOftheWeek == dayofWeekName[0]) {
-    akanName = genderMale[0];
-  } else if (gender == 'male' && dayOftheWeek == dayofWeekName[1]) {
-    akanName = genderMale[1];
-  } else if (gender == 'male' && dayOftheWeek == dayofWeekName[2]) {
-    akanName = genderMale[2];
-  } else if (gender == 'male' && dayOftheWeek == dayofWeekName[3]) {
-    akanName = genderMale[3];
-  } else if (gender == 'male' && dayOftheWeek == dayofWeekName[4]) {
-    akanName = genderMale[4];
-  } else if (gender == 'male' && dayOftheWeek == dayofWeekName[5]) {
-    akanName = genderMale[5];
-  } else if (gender == 'male' && dayOftheWeek == dayofWeekName[6]) {
-    akanName = genderMale[6];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[0]) {
-    akanName = genderFemale[0];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[1]) {
-    akanName = genderFemale[1];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[2]) {
-    akanName = genderFemale[2];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[3]) {
-    akanName = genderFemale[3];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[4]) {
-    akanName = genderFemale[4];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[5]) {
-    akanName = genderFemale[5];
-  } else if (gender == 'female' && dayOftheWeek == dayofWeekName[6]) {
-    akanName = genderFemale[6];
-  } else {
-    alert("Invalid!! Kindly Enter a correct date/ month or year of birth") //Alerts the user to enter correct details if the user enters a wrong format from the one defined in the prompt.
-  }
-  alert("You were born on " + dayOftheWeek + " Your Akan Name is " + akanName); // gives the day of the week and the Ghanian name, whether female or male.
-
-}
-(getName());
-
-        }
-        </script>
-</body>
+      </body>
 </html>
