@@ -23,7 +23,7 @@ function getDayofWeek(dateofBirth) {
     dayofWeek = dayofWeekName[6];
   }
 
-  return dayofWeek; // returns the day of the week
+  return dayofWeek; // returns the day of the week as per the index in which its contained.
 }
 
 function getName() {
