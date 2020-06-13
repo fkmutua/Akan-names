@@ -20,7 +20,7 @@ Technologies:
 
 Contact information
 
-https://github.com/fkmutua
+https://github.com/fkmutua / felixmutua75@gmail.com
 
 
 License and Copyright information
