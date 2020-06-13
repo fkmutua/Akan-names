@@ -1,36 +1,39 @@
 .top {
-                text-align: center;
-                color: brown;
-                }
-.bottom
-       {
-                 text-align: center;
-                 color: blue
-           
-       } 
-.first-paragraph { 
-       text-align: left;
-       font-size: x-large;
-       color: black;
-       margin-left: 100px;  
+    text-align: center;
+    color: brown;
+}
 
+.bottom {
+    text-align: center;
+    color: blue
 }
-.second-paragraph{
-       text-align: left;
-       font-size: large;
-       color:black;
-       margin-left: 100px;
+
+.first-paragraph {
+    text-align: left;
+    font-size: x-large;
+    color: black;
+    margin-left: 100px;
 }
+
+.second-paragraph {
+    text-align: left;
+    font-size: large;
+    color: black;
+    margin-left: 100px;
+}
+
 .image {
-       width: 1200px;
-       height: 400px;
-<<<<<<< HEAD
-       margin-left: 100px;
-=======
-       margin-left: 50px;
->>>>>>> gh-pages
-       margin-top: 5px;
+    width: 1200px;
+    height: 400px;
+    margin-left: 100px;
+    margin-left: 50px;
+    margin-top: 5px;
 }
-.body{
-       background-color: #D1BCB8;
+
+.body {
+    background-color: #D1BCB8;
+}
+
+.submit {
+    text-align: center
 }
